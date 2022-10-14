@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/107563603a.js" crossorigin="anonymous"></script>
+    <title>Calcolatrice</title>
+</head>
+
+<body>
+
+    <h1>Calcolatrice in JS</h1>
+
+    <div class="visore">
+        <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+    </div>
+    <div class="scatola">
+        <div class="content">
+            <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="/" value="÷" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="*" value="x" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" value="AC" onclick="cancella()" class="tasto" id="aC">
+            <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <button value="=" onclick="operazione()" class="ugualeTasto">=</button>
+        </div>
+    </div>
+
+    <a href="https://github.com/FlavioCir" target="_blank"><i class="fa-brands fa-github"></i> GitHub - Flavio Cirillo</a>
+    <a href="https://epicode.com/it/landing-web-developer-a/?utm_source=googleads&utm_campaign=brand&utm_adgroup=brandexact&utm_term=epicode&utm_campaign=Brand+QI+Target&utm_source=adwords&utm_medium=ppc&hsa_acc=1246633295&hsa_cam=16691982470&hsa_grp=138769335350&hsa_ad=589723747647&hsa_src=g&hsa_tgt=kwd-1083842420863&hsa_kw=epicode&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwkaSaBhA4EiwALBgQaL1_kpmBCqZmXiAySGEZ98Tm2NLzr4mO5TOdV1NEYMd47jwTEamqRhoC4AkQAvD_BwE" target="_blank"><i class="fa-solid fa-code"></i> Epicode - Web Developer</a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
